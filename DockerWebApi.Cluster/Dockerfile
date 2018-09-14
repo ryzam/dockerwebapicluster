@@ -5,9 +5,13 @@ EXPOSE 44306
 
 FROM microsoft/dotnet:2.1-sdk-nanoserver-1709 AS build
 WORKDIR /src
-COPY DockerWebApi.Cluster/DockerWebApi.Cluster.csproj DockerWebApi.Cluster/
+
+#COPY Program.cs ./api/
+
+COPY DockerWebApi.Cluster.csproj ./DockerWebApi.Cluster/
 RUN dotnet restore DockerWebApi.Cluster/DockerWebApi.Cluster.csproj
-COPY . .
+
+COPY . ./DockerWebApi.Cluster/
 WORKDIR /src/DockerWebApi.Cluster
 RUN dotnet build DockerWebApi.Cluster.csproj -c Release -o /app
 
