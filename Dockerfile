@@ -20,5 +20,5 @@ RUN dotnet publish DockerWebApi.Cluster/DockerWebApi.Cluster.csproj -o /publish
 FROM microsoft/dotnet:2.1-aspnetcore-runtime-nanoserver-1709 AS final
 
 WORKDIR /app
-COPY --from=publish /app .
+COPY --from=publish /publish .
 ENTRYPOINT ["dotnet", "DockerWebApi.Cluster.dll"]
