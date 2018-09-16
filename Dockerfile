@@ -1,5 +1,5 @@
 #FROM microsoft/dotnet:2.1-aspnetcore-runtime-nanoserver-1709 AS base
-
+#Use in teamcity
 
 FROM microsoft/dotnet:2.1-sdk-nanoserver-1709 AS build
 WORKDIR src

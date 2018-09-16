@@ -1,0 +1,14 @@
+version: '3.4'
+
+services:
+  dockerwebapicluster:
+    image: irwanazam/dockerwebapicluster:ci-6
+    ports: 
+      - 6111:80
+
+  integration:
+    image: dockerwebapicluster-integration
+    #build:
+    #  context: .
+    #  dockerfile: Dockerfile
+

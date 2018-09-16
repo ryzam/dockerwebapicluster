@@ -3,9 +3,24 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27705.2000
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DockerWebApi.Cluster", "DockerWebApi.Cluster\DockerWebApi.Cluster.csproj", "{8D17FABF-B7D6-4B74-8A33-70E5413FFC59}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DockerWebApi.Cluster", "DockerWebApi.Cluster\DockerWebApi.Cluster.csproj", "{8D17FABF-B7D6-4B74-8A33-70E5413FFC59}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DockerWebApi.Cluster.Tests", "DockerWebApi.Cluster.Tests\DockerWebApi.Cluster.Tests.csproj", "{177AE2EC-33DE-455D-8755-3A778F071EEB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DockerWebApi.Cluster.Tests", "DockerWebApi.Cluster.Tests\DockerWebApi.Cluster.Tests.csproj", "{177AE2EC-33DE-455D-8755-3A778F071EEB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "api", "api", "{8357346B-424C-4DA7-BA38-6D5D3765846D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{3D45FAD9-1ECB-4BE4-AF7D-A0C422EC5D37}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{534A0F71-7954-4EFE-BAD9-66EC8E6DCEBC}"
+	ProjectSection(SolutionItems) = preProject
+		Dockerfile = Dockerfile
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "integrations", "integrations", "{AD372B4B-862F-4058-BDA8-7C89D6958DAF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DockerWebApi.Cluster.Integrations", "DockerWebApi.Cluster.Integrations\DockerWebApi.Cluster.Integrations.csproj", "{0F661111-976C-45CA-8A30-BA4446078C82}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{30D81687-5C46-4BCC-8213-88667EF2EDBD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,9 +36,22 @@ Global
 		{177AE2EC-33DE-455D-8755-3A778F071EEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{177AE2EC-33DE-455D-8755-3A778F071EEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{177AE2EC-33DE-455D-8755-3A778F071EEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F661111-976C-45CA-8A30-BA4446078C82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F661111-976C-45CA-8A30-BA4446078C82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F661111-976C-45CA-8A30-BA4446078C82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F661111-976C-45CA-8A30-BA4446078C82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30D81687-5C46-4BCC-8213-88667EF2EDBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30D81687-5C46-4BCC-8213-88667EF2EDBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30D81687-5C46-4BCC-8213-88667EF2EDBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30D81687-5C46-4BCC-8213-88667EF2EDBD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8D17FABF-B7D6-4B74-8A33-70E5413FFC59} = {8357346B-424C-4DA7-BA38-6D5D3765846D}
+		{177AE2EC-33DE-455D-8755-3A778F071EEB} = {3D45FAD9-1ECB-4BE4-AF7D-A0C422EC5D37}
+		{0F661111-976C-45CA-8A30-BA4446078C82} = {AD372B4B-862F-4058-BDA8-7C89D6958DAF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A18FA475-614F-4B19-984C-41B881FD1C33}
