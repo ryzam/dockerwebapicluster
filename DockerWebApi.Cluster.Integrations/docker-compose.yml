@@ -11,6 +11,3 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    environment:
-      - TEAMCITY_PROJECT_NAME
-
